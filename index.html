@@ -10,12 +10,15 @@ desde el que parten todas las páginas en bootstrap-->
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<!--estilos css-->
 	<style>
-		body {
+		.componente {
 			background-image: url(ImagenesKeka/keka.jpg);
             height: 100%;
             /* Center and scale the image nicely */
             background-position: right;
             background-repeat: no-repeat;;
+		}
+		p{
+			font-size: x-large;
 		}
 		.slider{
 			background-color:#F1A02D;
@@ -43,12 +46,31 @@ desde el que parten todas las páginas en bootstrap-->
 		.bg-color5{
 			background: #BC8023;
 		}
+
+		@media (max-width: 767px) {
+			.componente {
+				background-image:url(ImagenesKeka/keka1.jpg);
+				background-position: left;
+			}
+			
+		
+		}
+	
+		// Large devices (desktops, 992px and up)
+		@media (max-width: 1024) { 
+
+
+		}
+
+		// Extra large devices (large desktops, 1200px and up)
+		@media (min-width: 1200px) { ... }
+		
 	</style>
 	
 	<div class="container">
 		<title>Rechampi</title>
 		</head>
-		<body>
+		<body class="componente">
 		 <div class="container-fluid slider">
 			<div class="row">
 				<div class="col-md-6 d-flex justify-content-center align-items-center">
@@ -105,34 +127,34 @@ desde el que parten todas las páginas en bootstrap-->
 	</div>
 	<section class="container">
 		<div class="col">
-			<p><h3 class="text-black text-warning">Peinture et décoration en général.</h3></p>
+			<p class="deco text-black text-warning">Peinture et décoration en général.</p>
 		</div>
-		<div class="col col-lg-8 col-sm-12 float-right">
+		<div class="col col-xl-8 col-lg-8 col-md-8 col-sm-12 float-right">
 			<!--<p class="mt-5 text-center font-weight-bold">-->
-				<h4 class="text-black w-65 mr-4">
-				<img src="logo2.jpg" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+				<p class="frase font-weight-bold text-black w-65 mr-4">
+				<img src="logo2.jpg" width="40" height="40" class="logo d-inline-block align-top" alt="" loading="lazy">
 				Avec toutes les garanties et protections sanitaires contre le Covid-19
 			<!--</p>-->
 			<!--<p class="mt-5 text-center font-weight-bold">-->
-				<h4 class="text-black w-65 mr-4">
-				<img src="logo2.jpg" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+				<p class="frase font-weight-bold text-black w-65 mr-4">
+				<img src="logo2.jpg" width="40" height="40" class="logo d-inline-block align-top" alt="" loading="lazy">
 				Nous réalisons toutes sortes de travaux de peinture dans les maisons particulières, les locaux, les bars, les bureaux, les collectivités de propriétaires, les garages, les façades...
-			<!--</p>-->
+				</p>
 			<!--<p class="mt-5 text-center font-weight-bold">-->
-				<h4 class="text-black w-65 mr-4">
-				<img src="logo2.jpg" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+				<p class="frase font-weight-bold text-black w-65 mr-4">
+				<img src="logo2.jpg" width="40" height="40" class="logo d-inline-block align-top" alt="" loading="lazy">
 				Professionnalisme et qualité irréprochable.
-			<!--</p>-->
+				</p>
 			<!--<p class="mt-5 text-center font-weight-bold">-->
-				<h4 class="text-black w-65 mr-4">
-				<img src="logo2.jpg" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+				<p class="frase font-weight-bold text-black w-65 mr-4">
+				<img src="logo2.jpg" width="40" height="40" class="logo d-inline-block align-top" alt="" loading="lazy">
 				Platico platico, gotelet, stuc, terres florentines, sirocco, glaçures, genèse.
-			<!--</p>-->
+				</p>
 			<!--<p class="mt-5 text-center font-weight-bold">-->
-				<h4 class="text-black w-65 mr-4">
-				<img src="logo2.jpg" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+				<p class="frase font-weight-bold text-black w-65 mr-4">
+				<img src="logo2.jpg" width="40" height="40" class="logo d-inline-block align-top" alt="" loading="lazy">
 				Bordures décoratives, émaux, laques et papier vinyle.
-			<!--</p>-->
+				</p>
 			<div class="row bg-color2 col-sm-12 text-center">
 				<p class="mt-5 font-weight-bold">
 					<h3 class="text-white mr-4">Appelez-nous au</h3>
@@ -146,6 +168,7 @@ desde el que parten todas las páginas en bootstrap-->
 		</div>
 		
 	</section>
+
 	
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
